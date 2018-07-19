@@ -1,0 +1,183 @@
+.main{
+	width: 100%;
+	height: 100%;
+	background: #D3D3D3;
+	overflow: hidden;
+}
+.header{
+	width: 100%;
+	height: 79px;
+	background: #fff;
+	display: flex;
+	justify-content: space-around;
+	position: fixed;
+	z-index: 10; 
+	
+}
+.logo{
+	width: 150px;
+	height: 50px;
+	margin-left: 100px;
+	padding-top: 14.5px;
+}
+.title a{
+	font-size: 14px;
+	width: 89px;
+	height: 79px;
+	padding: 0 15px;
+	line-height: 79px;
+	color: #ddd;
+}
+.title a:hover{
+	color:skyblue;
+}
+.huayi{
+	width: 100%;
+	height: 1200px;
+	margin-top: 79px;
+}
+.huayi_k{
+	width: 50%;
+	height: 600px;
+	background: red;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+
+.huayi_z{
+	width: 100%;
+	height: 600px;
+	background: rgba(0, 0, 0, 0);
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.huayi_k:hover .huayi_z{    /*  黑 */
+	background: rgba(0, 0, 0, 0.3);
+}
+.huayi_k:hover .mid_time{    /* 字 */
+	opacity: 1;
+}
+.huayi_k img{
+	width: 100%;
+	height: 600px;
+}
+.huayi_k:hover img{   
+	transform: scale(1.2);
+}
+.huayi_mid{
+	width: 120px;
+	height: 138px;
+	margin:auto;
+	/* background: blue; */
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 5;
+}
+.mid_time{
+	width: 120px;
+	height: 38px;
+	opacity: 0.5;
+}
+
+.mid_time h{
+	color:#D3D3D3; 
+	padding-left: 10px;
+
+}
+.border{
+	width: 20px;
+	border: 2px solid #D3D3D3;
+	margin:0 auto;
+	margin: 15px 50px;
+	
+}
+.mid_time h1{
+	width: 120px;
+	height: 29px;
+	margin-bottom: 20px;
+	font-size: 24px;
+	color: #F7E8BC;
+}
+.mid_he{
+	width: 60px;
+	height: 36px;
+	margin: 0 auto;
+	padding: 8px 15px;
+	border: 1px solid #D3D3D3;
+}
+.mid_he a{
+	font-size: 14px;
+	
+	color: #D3D3D3;
+}
+.mid_he:hover{
+	background: #fff;
+}
+.jian{
+	width: 100%;
+	border-bottom:20px solid #fff;
+
+}
+.hou{
+	width: 100%;
+	height: 181px;
+}
+.hou_top{
+	width: 100%;
+	height: 57px;
+	padding: 5px 0;
+	margin: 10px 0;
+	text-align: center;
+}
+.hou_top i{
+	font-size: 25px;
+	color: #fff;
+	line-height: 57px;
+	margin-left: 30px;
+	color: #62A8EA;
+}
+.hou_top i:hover{
+	cursor: pointer;
+}
+.tan{
+	width: 160px;
+	height: 208px;
+	background-color: #ff6700;
+	position: absolute;
+	margin-top: -258px;
+	left: 45%;
+	transition: all 1s linear;
+	display: none;
+}
+.icon-icon4:hover .tan{
+	display: block; 
+}
+.tan img{
+	width: 160px;
+	height: 208px;
+}
+.hou_mid{
+	width: 1140px;
+	height: 25px;
+	margin: 0 auto;
+	text-align: center;
+}
+.hou_mid img{
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	text-align: center;
+}
+.hou_mid a{
+	color: skyblue;
+}
+.hou_mid a:hover{
+	text-decoration: underline;
+}
