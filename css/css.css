@@ -6,12 +6,11 @@
 .header{
 	width: 100%;
 	height: 79px;
-	background: #fff;
 	display: flex;
 	justify-content: space-around;
 	position: fixed;
-	z-index: 10; 
-	
+	z-index: 20; 
+	background:rgba(0,0,0,0.1);
 }
 .logo{
 	width: 150px;
@@ -25,10 +24,14 @@
 	height: 79px;
 	padding: 0 15px;
 	line-height: 79px;
-	color: #ddd;
+	text-decoration: none;
+	color: #fff;
 }
 .title a:hover{
 	color:skyblue;
+}
+.hot{
+	color: #000;
 }
 .banner{
 	width: 100%;
@@ -36,33 +39,12 @@
 	position: relative;
 }
 .banner_img img{
-	width: 100%px;
+	width: 100%;
 	height: 855px;
 	position: absolute;
 	top: 0;
 	left: 0;
-}
-.banner_yuanhe{
-	width: 400px;
-	height: 18px;
-	bottom: 20px;
-	right: 302px;
-	left: 400px;
-	display: inline block;
-	position: absolute;
-}
-.banner_yuan{
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color: #5F5750;
-	border: 2px solid #b0b0b0;
-	margin: 5px;
-	float: right
-}
-.banner_yuan:hover{
-	background-color: #ff6700;
-	cursor: pointer;
+	z-index: 5;
 }
 .container{
 	width: 100%;
@@ -76,9 +58,6 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
-}
-.container_top:hover{
-	transform:translateX (0 200px);
 }
 .container_top span{
 	font-size: 44px;
@@ -114,7 +93,7 @@
 	flex-wrap: nowrap;
 	position: relative;
 	justify-content: space-between;
-
+	overflow: hidden;
 }
 .bottom_nei{
 	width: 188px;
@@ -193,6 +172,7 @@
 	height: 708px;
 	background: #F5F5F5;
 	padding-top: 30px;
+	position: relative;
 }
 .huayu_he{
 	width: 1170px;
@@ -201,13 +181,22 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	position: absolute;
+	top: 74px;
+	right: 0;
+	left: 0;
+	bottom: 0;
 }
 .huayu_nei{
 	width: 580px;
 	height: 120px;
 	margin-top: 20px;
-	padding: 0 15px;	
+	padding: 0 15px;
+	transition: 1s;	
 }
+/* .huayu_nei:hover{
+	transform: translate(40px, 0)
+} */
 .huayu_img{
 	width: 160px;
 	height: 120px;
